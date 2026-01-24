@@ -8,8 +8,3 @@ dist/
 # OS/IDEs
 .DS_Store
 .vscode/
-
-# Replit leftovers
-.replit
-replit.nix
-.pythonlibs/
