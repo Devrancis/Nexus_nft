@@ -1,0 +1,6 @@
+[
+    {"id":3,"title":"Solana Ape","description":"Exclusive digital collectible.","image_url":"https://nftcalendar.io/storage/uploads/2022/09/14/e7947704-6ed0-4ab5-aa63-4ba38df0a3fe_09142022074018632185621ca4c.jpeg","price_sol":"5.0","owner_address":"7z...FakeAddress","created_at":"2026-01-22T21:34:15.705Z"},
+    {"id":2,"title":"Neon Genesis","description":"Abstract neon waves on the Solana blockchain.","image_url":"https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3","price_sol":"2.0","owner_address":"9y...FakeAddress","created_at":"2026-01-22T21:34:15.702Z"},
+    {"id":1,"title":"Cyber Punk #2077","description":"A rare glitch art NFT from the future.","image_url":"https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3","price_sol":"1.5","owner_address":"8x...FakeAddress","created_at":"2026-01-22T21:34:15.689Z"}
+    
+]

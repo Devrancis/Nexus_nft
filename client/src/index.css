@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "@solana/wallet-adapter-react-ui/styles.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cyberpunk Palette - Dark Mode Default */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --background: 240 20% 3%;     /* Deepest black/blue */
+  --foreground: 180 10% 98%;    /* Ice white */
+  
+  --primary: 280 85% 60%;       /* Neon Purple */
+  --primary-foreground: 280 10% 98%;
+  
+  --secondary: 160 85% 50%;     /* Neon Green */
+  --secondary-foreground: 160 10% 5%;
+  
+  --muted: 240 10% 12%;
+  --muted-foreground: 240 10% 65%;
+  
+  --accent: 320 85% 60%;        /* Hot Pink */
+  --accent-foreground: 320 10% 98%;
+  
+  --destructive: 0 85% 60%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 240 10% 15%;
+  --input: 240 10% 15%;
+  --ring: 280 85% 60%;
+  
+  --card: 240 15% 6%;
+  --card-foreground: 180 10% 98%;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(147, 51, 234, 0.08), transparent 25%), 
+      radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.08), transparent 25%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-card/60 backdrop-blur-xl border border-white/5 shadow-xl;
+  }
+  
+  .neon-border {
+    @apply relative transition-all duration-300;
+  }
+  
+  .neon-border::before {
+    content: '';
+    @apply absolute -inset-[1px] rounded-xl bg-gradient-to-r from-primary via-accent to-secondary opacity-0 transition-opacity duration-300 -z-10 blur-sm;
+  }
+  
+  .neon-border:hover::before {
+    @apply opacity-70;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  }
+
+  /* Custom Wallet Button Overrides */
+  .wallet-adapter-button {
+    font-family: var(--font-display) !important;
+    font-weight: 600 !important;
+    height: 48px !important;
+    border-radius: 0.75rem !important;
+    background-color: hsl(var(--primary)) !important;
+    color: hsl(var(--primary-foreground)) !important;
+    transition: all 0.2s ease-out !important;
+  }
+  
+  .wallet-adapter-button:hover {
+    background-color: hsl(var(--primary) / 0.8) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(147, 51, 234, 0.4);
+  }
+}

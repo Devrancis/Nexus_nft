@@ -1,0 +1,15 @@
+# Secrets (DO NOT REMOVE)
+.env
+
+# Dependencies
+node_modules/
+dist/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+
+# Replit leftovers
+.replit
+replit.nix
+.pythonlibs/
