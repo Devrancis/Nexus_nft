@@ -1,9 +1,9 @@
-import { db } from "./db";
+import { db } from "./db.js";
 import {
   nfts,
   type Nft,
   type InsertNft
-} from "@shared/schema";
+} from "../shared/schema.js";
 import { eq } from "drizzle-orm";
 
 export interface IStorage {

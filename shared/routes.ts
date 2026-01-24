@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertNftSchema, nfts } from './schema';
+import { insertNftSchema, nfts } from './schema.js';
 
 export const errorSchemas = {
   validation: z.object({
