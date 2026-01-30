@@ -58,7 +58,7 @@ export async function registerRoutes(
     await storage.createNft({
       title: "Solana Ape",
       description: "Exclusive digital collectible.",
-      imageUrl: "https://nftcalendar.io/storage/uploads/2022/09/14/e7947704-6ed0-4ab5-aa63-4ba38df0a3fe_09142022074018632185621ca4c.jpeg",
+      imageUrl: "https://forklog.com/wp-content/uploads/ape_5383-min.webp",
       priceSol: "5.0",
       ownerAddress: "7z...FakeAddress"
     });
